@@ -1,0 +1,30 @@
+/* Stylizacja paska przewijania */
+::-webkit-scrollbar {
+    width: 5px; /* Szerokość paska przewijania - teraz będzie węższy */
+    height: 5px; /* Wysokość paska przewijania dla poziomego scrolla */
+}
+
+/* Tło paska przewijania */
+::-webkit-scrollbar-track {
+    background: #fafafa; /* Kolor tła paska przewijania */
+}
+
+/* Uchwyt (suwak) paska przewijania */
+::-webkit-scrollbar-thumb {
+    background: #0891b2; /* Kolor uchwytu paska przewijania */
+    border-radius: 0px; /* Usunięcie zaokrągleń krawędzi uchwytu */
+}
+
+/* Uchwyt paska przewijania podczas najechania */
+::-webkit-scrollbar-thumb:hover {
+    background: #0e7490; /* Kolor uchwytu paska przewijania podczas najechania */
+}
+
+/* Przyciski (górny i dolny) paska przewijania - ukrycie */
+::-webkit-scrollbar-button {
+    display: none; /* Ukrycie przycisków na górze i dole paska przewijania */
+}
+
+body{
+    overflow: hidden; /* Ukrycie paska przewijania, gdy nie jest potrzebny */
+}
